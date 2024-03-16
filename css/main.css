@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'nintendo';
+    src: url('FOT-NewRodin Pro EB.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'kosugi';
+    src: url('KosugiMaru-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'mamelon';
+    src: url('Mamelon-3.5-Hi-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'corpround';
+    src: url('Corporate-Logo-Rounded.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.body{
+    background-color: rgb(12, 9, 17);
+    font-family:'nintendo';
+    color: rgb(222, 241, 253);
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.54,.08,.56,.97);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bodysp{
+    background-color: rgb(12, 9, 17);
+    font-family:'nintendo';
+    color: rgb(222, 241, 253);
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.54,.08,.56,.97);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+@keyframes appear{
+    from{
+        opacity: 0%;
+        scale: 0.5;
+
+    }
+}
+.title{
+    font-family: 'nintendo';
+    padding-top: 20px;
+    transition: 0.2s;
+    color: aliceblue;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.title:hover{
+    transform: scale(1.2);
+    color: rgb(186, 214, 255);
+}
+.botao{
+    transition: 0.2s;
+    display:block;
+    color: aliceblue;
+    background-color: rgba(59, 80, 196, 0.226);
+    border-radius: 10px;
+    height: 100px;
+    width: 500px;
+    text-align: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.botao:hover{
+    transform: scale(1.2);
+    color: rgb(186, 214, 255);
+    background-color: rgb(211, 75, 150);
+}
+.feet{
+    height: 40vh;
+    border-radius: 5vh;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.manutext{
+    padding-top: 50px;
+}
+.subtit{
+    padding-bottom: 10px;
+}
+.album{
+    height: 20vh;
+    padding-top: 7px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+.album:active{
+    transform: scale(3.5);
+}
+.arq{
+    padding-bottom: 300px;
+}
