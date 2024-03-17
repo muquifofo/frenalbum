@@ -28,7 +28,7 @@
 }
 
 .body{
-    background-color: rgb(12, 9, 17);
+    background-color: rgb(22, 22, 22);
     font-family:'nintendo';
     color: rgb(222, 241, 253);
     animation-name: appear;
@@ -39,7 +39,7 @@
     background-attachment: fixed;
 }
 .bodysp{
-    background-color: rgb(12, 9, 17);
+    background-color: rgb(22, 22, 22);
     font-family:'nintendo';
     color: rgb(222, 241, 253);
     animation-name: appear;
@@ -68,13 +68,13 @@
 }
 .title:hover{
     transform: scale(1.2) rotate(2deg);
-    color: rgb(186, 214, 255);
+    color:  rgb(182, 233, 255);
 }
 .botao{
     transition: 0.2s;
     display:block;
     color: aliceblue;
-    background-color: rgba(59, 80, 196, 0.226);
+    background-color: rgb(65, 99, 114);
     border-radius: 10px;
     height: 100px;
     width: 500px;
@@ -86,15 +86,16 @@
 .botao:hover{
     transform: scale(1.2) rotate(-2deg);
     color: rgb(186, 214, 255);
-    background-color: rgb(211, 75, 150);
+    background-color: rgb(209, 74, 115);
 }
+
 .feet{
-    height: 40vh;
+    height: 30vh;
     border-radius: 5vh;
     animation-name: spin;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(.54,.08,.56,.97);;
 }
 @keyframes spin{
     from{
@@ -104,6 +105,7 @@
         transform: rotate(360deg);
     }
 }
+
 .subtit{
     padding-bottom: 10px;
 }
@@ -118,4 +120,14 @@
 }
 .arq{
     padding-bottom: 300px;
+}
+.return{
+    padding:15px;
+    
+}
+.spin{
+    justify-content: center;
+}
+.empty{
+    padding-top: 100px;
 }
